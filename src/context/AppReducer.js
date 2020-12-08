@@ -12,6 +12,16 @@ export default (state, action) => {
         ...state,
         expenseTransactions: [action.payload, ...state.expenseTransactions],
       };
+    case "DELETE_TRANSACTION":
+      return {
+        ...state,
+        incomeTransactions: state.incomeTransactions.filter(
+          (transaction) => transaction.id !== action.payload
+        ),
+        expenseTransactions: state.expenseTransactions.filter(
+          (transaction) => transaction.id !== action.payload
+        ),
+      };
     default:
       return state;
   }
