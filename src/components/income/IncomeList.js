@@ -5,7 +5,7 @@ import { IncomeTransactions } from "./IncomeTransactions";
 export const IncomeList = () => {
   const { incomeTransactions } = useContext(GlobalContext);
 
-  console.log(incomeTransactions);
+  // console.log(incomeTransactions);
 
   return (
     <div className="transactions transactions-income">
