@@ -1,0 +1,80 @@
+.transactions {
+  margin-top: 3rem;
+  background-color: #2c2c2d;
+  /* border: 1px solid red; */
+  padding: 30px;
+}
+
+.transactions h2 {
+  font-family: "Baloo da 2", serif;
+  color: #eee;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.transactions-income {
+  border-radius: 10px 0 0 10px;
+}
+.transactions-expense {
+  border-radius: 0 10px 10px 0;
+}
+
+.transaction-list {
+  width: 100%;
+  /* border: 1px solid white; */
+  max-height: 200px;
+  /* overflow: hidden; */
+  overflow-y: auto;
+}
+
+.transaction {
+  list-style: none;
+  position: relative;
+  font-family: "Baloo da 2", serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin: 0 3.5rem 1.5rem 0;
+  color: #fff;
+  padding: 0.4rem 0.4rem 0.4rem 0.7rem;
+  border-radius: 0.3rem;
+  width: 32rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.transactions-income {
+  border-radius: 10px 0 0 10px;
+}
+
+.transactions-income .transaction {
+  background-color: #5a9b67;
+}
+
+.transactions-expense .transaction {
+  background-color: #cf5856;
+}
+
+.transaction-text {
+  /* width: 23rem; */
+}
+
+.transaction-amount {
+  /* transform: translateX(3rem); */
+}
+
+.delete-btn {
+  /* transform: translateX(4rem); */
+  position: absolute;
+  right: -35px;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  margin: 0 1rem;
+  color: #d4403e;
+  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  outline: none;
+}

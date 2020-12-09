@@ -1,8 +1,8 @@
 import { Header } from "./components/Header";
 import { Balance } from "./components/balance/Balance";
-import { AddTransaction } from "./components/transactions/AddTransaction";
-import { IncomeList } from "./components/income/IncomeList";
-import { ExpenseList } from "./components/expense/ExpenseList";
+import { AddTransaction } from "./components/addTransactions/AddTransaction";
+import { IncomeList } from "./components/transactions/IncomeList";
+import { ExpenseList } from "./components/transactions/ExpenseList";
 import { GlobalContextProvider } from "./context/GlobalState";
 
 import "./App.css";
@@ -11,13 +11,19 @@ function App() {
   return (
     <GlobalContextProvider>
       <div className="container">
-        <div className="app-wrapper">
-          <Header />
+        {/* <div className="app-wrapper"> */}
+        {/* <Header /> */}
+        <div className="balance-wrapper">
           <Balance />
-          <AddTransaction />
-          <IncomeList />
-          <ExpenseList />
         </div>
+        <div className="transactions-wrapper">
+          <AddTransaction />
+          <div className="lists-wrapper">
+            <IncomeList />
+            <ExpenseList />
+          </div>
+        </div>
+        {/* </div> */}
       </div>
     </GlobalContextProvider>
   );

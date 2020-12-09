@@ -2,6 +2,8 @@ import React, { useState, useContext } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { GlobalContext } from "../../context/GlobalState";
 
+import "./addTransaction.css";
+
 export const AddTransaction = () => {
   const { addIncome, addExpense } = useContext(GlobalContext);
 
@@ -67,7 +69,7 @@ export const AddTransaction = () => {
   return (
     <div className="form-wrapper">
       <form onSubmit={onSubmitIncome}>
-        <div className="div input-group income">
+        <div className="input-group income">
           <input
             type="text"
             name="incomeText"
@@ -88,7 +90,7 @@ export const AddTransaction = () => {
         </div>
       </form>
       <form onSubmit={onSubmitExpense}>
-        <div className="div input-group expense">
+        <div className="input-group expense">
           <input
             type="text"
             name="expenseText"
