@@ -29,7 +29,7 @@ html {
 .container {
   width: 100%;
   height: 100vh;
-  background-color: #77c987;
+  background-color: #77b9c9;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,13 +38,13 @@ html {
 }
 
 .balance-wrapper {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
 }
 
 .transactions-wrapper {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +52,7 @@ html {
 
 .lists-wrapper {
   width: 100%;
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   display: flex;
   justify-content: center;
 }

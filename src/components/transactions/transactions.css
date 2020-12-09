@@ -3,6 +3,7 @@
   background-color: #2c2c2d;
   /* border: 1px solid red; */
   padding: 30px;
+  min-width: 318px;
 }
 
 .transactions h2 {
@@ -23,7 +24,6 @@
 
 .transaction-list {
   width: 100%;
-  /* border: 1px solid white; */
   max-height: 200px;
   /* overflow: hidden; */
   overflow-y: auto;
@@ -39,14 +39,10 @@
   color: #fff;
   padding: 0.4rem 0.4rem 0.4rem 0.7rem;
   border-radius: 0.3rem;
-  width: 32rem;
+  width: 30rem;
   display: flex;
   justify-content: space-between;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.transactions-income {
-  border-radius: 10px 0 0 10px;
 }
 
 .transactions-income .transaction {
@@ -57,18 +53,10 @@
   background-color: #cf5856;
 }
 
-.transaction-text {
-  /* width: 23rem; */
-}
-
-.transaction-amount {
-  /* transform: translateX(3rem); */
-}
-
 .delete-btn {
-  /* transform: translateX(4rem); */
   position: absolute;
   right: -35px;
+  top: 8px;
   border: none;
   background-color: transparent;
   font-size: 2rem;

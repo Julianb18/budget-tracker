@@ -10,7 +10,7 @@ export const ExpenseList = () => {
 
   return (
     <div className="transactions transactions-expense">
-      <h2>Transaction History</h2>
+      <h2>Expense History</h2>
       <ul className="transaction-list">
         {expenseTransactions.map((transaction) => (
           <ExpenseTransaction key={transaction.id} transaction={transaction} />
