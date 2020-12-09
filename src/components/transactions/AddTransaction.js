@@ -31,33 +31,37 @@ export const AddTransaction = () => {
   const onSubmitIncome = (e) => {
     e.preventDefault();
 
-    const newIncomeTransaction = {
-      id: uuidv4(),
-      incomeText, // es6 syntax if he property name and value are the same we can write it once instead of incomeText: incomeText
-      incomeAmount: incomeAmount * 1, // multiply incomeAmount by one to transform the string to integer (Type coercion)
-    };
+    if (incomeText !== "") {
+      const newIncomeTransaction = {
+        id: uuidv4(),
+        incomeText, // es6 syntax if he property name and value are the same we can write it once instead of incomeText: incomeText
+        incomeAmount: incomeAmount * 1, // multiply incomeAmount by one to transform the string to integer (Type coercion)
+      };
 
-    addIncome(newIncomeTransaction);
-    setIncome({
-      incomeText: "",
-      incomeAmount: 0,
-    });
+      addIncome(newIncomeTransaction);
+      setIncome({
+        incomeText: "",
+        incomeAmount: 0,
+      });
+    }
   };
 
   const onSubmitExpense = (e) => {
     e.preventDefault();
 
-    const newExpenseTransaction = {
-      id: uuidv4(),
-      expenseText,
-      expenseAmount: expenseAmount * 1,
-    };
+    if (expenseText !== "") {
+      const newExpenseTransaction = {
+        id: uuidv4(),
+        expenseText,
+        expenseAmount: expenseAmount * 1,
+      };
 
-    addExpense(newExpenseTransaction);
-    setExpense({
-      expenseText: "",
-      expenseAmount: 0,
-    });
+      addExpense(newExpenseTransaction);
+      setExpense({
+        expenseText: "",
+        expenseAmount: 0,
+      });
+    }
   };
 
   return (
