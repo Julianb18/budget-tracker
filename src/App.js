@@ -18,11 +18,13 @@ function App() {
         </div>
         <div className="transactions-wrapper">
           <AddTransaction />
+
           <div className="lists-wrapper">
             <IncomeList />
             <ExpenseList />
           </div>
         </div>
+
         {/* </div> */}
       </div>
     </GlobalContextProvider>

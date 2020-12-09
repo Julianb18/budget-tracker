@@ -24,7 +24,7 @@
 
 .transaction-list {
   width: 100%;
-  max-height: 200px;
+  height: 250px;
   /* overflow: hidden; */
   overflow-y: auto;
 }
